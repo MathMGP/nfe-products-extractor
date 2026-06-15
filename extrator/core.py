@@ -16,16 +16,17 @@ import re
 import glob
 import xml.etree.ElementTree as ET
 
-# Mapa cProd (código do produto na NF-e) -> nome do corte em inglês (col. da Output)
+# Mapa cProd (código do produto na NF-e) -> nome do produto (col. da Output)
+# Personalize para os códigos e nomes usados na sua empresa.
 CUTS = [
-    ("2502", "Chuck Roll"),     # ACEM (MIOLO)
-    ("2508", "Chuck Ribs"),     # ACEM (RAMA)
-    ("2540", "Shoulder"),       # PALETA
-    ("2504", "Brisket"),        # PEITO
-    ("2505", "Chuck Tender"),   # PEIXINHO
-    ("2506", "Neck"),           # PESCOCO
-    ("2507", "Oyster Blade"),   # RAQUETE
-    ("2510", "Shin"),           # MUSCULO DO DIANTEIRO
+    ("2502", "Product A"),
+    ("2508", "Product B"),
+    ("2540", "Product C"),
+    ("2504", "Product D"),
+    ("2505", "Product E"),
+    ("2506", "Product F"),
+    ("2507", "Product G"),
+    ("2510", "Product H"),
 ]
 CODES = [c for c, _ in CUTS]
 CUT_NAMES = [n for _, n in CUTS]
