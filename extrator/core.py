@@ -2,7 +2,7 @@
 corte + dados de embarque. Sem dependência de UI — usado pelo app e pelos testes.
 
 Regras:
-- A pasta do contrato é a que COMEÇA com o número do contrato (ex.: 260398).
+- A pasta do contrato é a que COMEÇA com o número do contrato (ex.: 260001).
 - A NF fiscal válida é o arquivo ``*procNFe.xml``. Arquivos em subpastas de
   cancelamento (CANCELADA/ANTIGA/OLD/...) são IGNORADOS.
 - Cortes, peso líquido/bruto e nº de caixas (volumes) vêm do procNFe.
